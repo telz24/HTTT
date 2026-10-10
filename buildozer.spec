@@ -14,6 +14,10 @@ android.api = 33
 android.minapi = 24
 android.archs = arm64-v8a, armeabi-v7a
 android.accept_sdk_license = True
+# Pinned so the build is reproducible: newer python-for-android builds Python 3.14,
+# which Kivy 2.3.0 can't compile against.
+p4a.branch = v2024.01.21
+android.ndk = 25b
 
 [buildozer]
 log_level = 2
